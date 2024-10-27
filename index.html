@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Verde Solidário - Arborização RS</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <img id="logo" src="./Imag/Logo.png" alt="">
+        <div>
+            <h1>Verde Solidário</h1>
+            <p>Juntos pela arborização do Rio Grande do Sul</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <a href="./index.html">Início</a>
+        <a href="">Mapa</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="intro">
+                <h2>Faça Parte da Mudança</h2>
+                <p>Ajude a prevenir enchentes através da arborização urbana</p>
+                <br>
+                <button class="btn" onclick="scrollToForm()">Quero Participar</button>
+            </div>
+        </section>
+
+        <div class="cards-container">
+            <div class="card">
+                <h3>Por que Arborizar?</h3>
+                <p>A crescente urbanização de regiões que foram construídas em planícies de inundação, ou seja, em áreas planas adjacentes aos rios e córregos que recebem regularmente água durante enchentes e períodos de chuva intensa, tornaram a população dessas áreas vulneráveis a enchentes decorrente de mudanças climáticas jamais registradas. E diante dessa situação, nós do projeto Verde Solidário, entendemos que a mudança necessária para reestruturar essas regiões, não é um esforço único e simples, mas sim um trabalho conjunto e duradouro. E pensando nisso, o projeto nasceu com a finalidade de tornar o ambiente em que nos vivemos em uma lugar mais sustentável e seguro, através do plantio de arvores em áreas urbanizadas, e de conscientização da comunidade de que a natureza é nossa grande aliada, quando cuidada e respeitada!
+                </p>
+            </div>
+            <div class="card">
+                <h3>Impacto da Arborização</h3>
+                <p>Você sabia que uma árvore pode absorver até 250 litros de água do solo por dia? Graças a essa capacidade, a arborização urbana que tem um papel fundamental na drenagem de água no solo, facilitando sua absorção e diminuindo o volume de água que escoa pela superfície, reduzindo o risco de enchentes. Também contribui para prevenir a erosão do solo, reduzindo as chances de possíveis deslizamentos, e diminui as ilhas de calor, o que ajuda a reduzir a evaporação e a umidade do ar, influenciando no ciclo das chuvas e nos padrões de precipitação em áreas urbanas.</p>
+            </div>
+            <div class="card">
+                <h3>Como Ajudar</h3>
+                <p>Você pode ajudar como voluntário plantando novas arvores, doando mudas para o plantio ou contribuindo financeiramente. Ajude também divulgando o projeto em suas redes sociais e também auxiliando na conscientizando de sua comunidade.</p>
+            </div>
+        </div>
+
+        <div class="map-container" id="mapa">
+
+            <img id="map" src="./Imag/Captura de tela 2024-10-26 144522.png" alt="">
+
+            <p id="text-map">Dados produzidos pela ONG MapBiomas mostram que, entre 1985 e 2022, o Rio Grande do Sul
+                perdeu aproximadamente 3,5 milhões de hectares de vegetação nativa. Leis que flexibilizam a proteção
+                ambiental são outro ponto que contribuem para o cenário crítico. O professor Edson Vidal, do curso de
+                Engenharia Florestal da Escola Superior de Agricultura Luiz de Queiroz (Esalq) da USP, e coordenador do
+                projeto Corredor Caipira de Reflorestamento e Preservação na região de Piracicaba, é assertivo: “O que
+                agravou aquela região é que lá não tinha proteção [vegetativa]”.
+
+                O especialista lembra que as mudanças climáticas afetam o mundo todo e que desastres como esses não são
+                particularmente novidade. Mas ele afirma que casos como o do Rio Grande do Sul, em que a mata nativa foi
+                severamente destruída, são muito mais vulneráveis. O papel da vegetação, nesses casos, é de intermediar
+                a água e o solo. Ele dá exemplos: “Evitar ou reduzir a velocidade da água, fazer com que essa água
+                consiga infiltrar no solo e evitar a erosão”. Sobre o caso do RS, ele complementa: “Se tivesse essa
+                vegetação como uma proteção, provavelmente a situação seria menos catastrófica”.
+
+                Fonte: Jornal da USP - <a
+                    href="https://jornal.usp.br/radio-usp/como-o-desmatamento-no-rio-grande-do-sul-pode-ter-agravado-inundacoes/">https://jornal.usp.br/radio-usp/como-o-desmatamento-no-rio-grande-do-sul-pode-ter-agravado-inundacoes/</a>
+            </p>
+
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item" style="background-image: url(./Imag/benira-enquadramento-capa-6_4-1.jpg)">
+                </div>
+                <div class="carousel-item"
+                    style="background-image: url(./Imag/rio-guaiba-reuters-1hbg0nbtd2tyw-1.webp)"></div>
+                <div class="carousel-item"
+                    style="background-image: url(./Imag/Instituto-aponta-que-recuperar-vegetacao-no-RS-ajuda-a-prevenir-tragedias.jpg)">
+                </div>
+                <div class="carousel-item"
+                    style="background-image: url(./Imag/image_processing20240509-3791018-px1mlb.webp)"></div>
+                <div class="carousel-item"
+                    style="background-image: url(./Imag/Enchentes_de_2015_no_Rio_Grande_do_Sul_7.jpg)"></div>
+                <div class="carousel-item" style="background-image: url(./Imag/000_34QX3V2.jpg)"></div>
+            </div>
+            <button class="carousel-btn prev" onclick="moveCarousel(-1)">❮</button>
+            <button class="carousel-btn next" onclick="moveCarousel(1)">❯</button>
+            <div class="carousel-dots"></div>
+        </div>
+
+        <div class="form-container" id="form-participar">
+            <h2>Cadastre-se para Ajudar
+            </h2>
+            <form id="volunteer-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone">
+                </div>
+                <div class="form-group">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipo-ajuda">Como deseja ajudar?</label>
+                    <select id="tipo-ajuda" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="plantar">Quero plantar árvores</option>
+                        <option value="doar">Quero doar mudas</option>
+                        <option value="divulgar">Quero ajudar na divulgação</option>
+                        <option value="divulgar">Quero ajudar na Financeiramente</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem (opcional)</label>
+                    <textarea id="mensagem" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar Cadastro</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+       
+</body>
+
+</html>
