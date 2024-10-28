@@ -1,7 +1,11 @@
+const pergunta = document.querySelector(".pergunta")
+
 function scrollToForm() {
   document.getElementById('form-participar').scrollIntoView({ behavior: 'smooth' });
 }
-
+function scrollToMap() {
+  document.getElementById('mapa').scrollIntoView({ behavior: 'smooth' });
+}
 function handleSubmit(event) {
   event.preventDefault();
   const formData = {
@@ -66,4 +70,22 @@ setInterval(() => moveCarousel(1), 5000);
 function initMap() {
   console.log('Inicializar mapa com as áreas:', areasParaArborizar);
 }
+
+function typeWriter(elemento){
+  setTimeout(() => {       
+  const textoArry = elemento.innerHTML.split('');
+  elemento.innerHTML = '';
+  textoArry.forEach((letra, i) => {
+      setTimeout(() => elemento.innerHTML += letra, 75 * i);
+      
+  })}, 0);
+}
   
+function hidelogo() { 
+  pergunta.style.display = "block"
+  setTimeout(() => {
+      pergunta.style.opacity = "1"
+  }, 5000);
+  typeWriter(pergunta)    
+  
+}

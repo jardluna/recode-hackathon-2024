@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f0f8f0;
+}
+
+
+.header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  text-emphasis-color: #ffffff;
+}
+
+#logo {
+  height: 100PX;
+  position: fixed;
+  left: 0px;
+  z-index: 2;
+}
+
+
+.nav {
+  background-color: #1b5e20;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav a:hover {
+  background-color: #388e3c;
+}
+
+body {
+  background-color: #f0f8f0;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+h2 {
+  color: #1b5e20;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.titulos,
+.descricao {
+  color: #020202;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  gap: 20px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.contato-info {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #e8f5e9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 2px solid #006400;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+}
+
+.contato-info strong {
+  color: #2e7d32;
+  font-size: 1.5rem;
+}
+
+.contato-info p {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  color: #020202;
+}
+
+.card a {
+  color: rgb(0, 0, 0);
+}
+
+.car a:hover {
+  color: #05fc11;
+}
+
+.rede-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+}
+
+.rede-social img {
+  position: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: #2e7d32;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
